@@ -4,34 +4,14 @@ import TwitterFollowCard from "./TwitterFollowCard";
 
 const App = () => {
   return (
-    <>
-      <TwitterFollowCard userName="midudev" initialIsFollowing>
-        Miguel D
+    <section className="App">
+      <TwitterFollowCard userName="midudev">Miguel D</TwitterFollowCard>
+
+      <TwitterFollowCard userName="pheralb" isFollowing>
+        Pablo Heraldo
       </TwitterFollowCard>
-      <TwitterFollowCard userName="pheralb" initialIsFollowing={false}>
-        Pablo Hernandez
-      </TwitterFollowCard>
-    </>
+    </section>
   );
 };
 
 export default App;
-
-// import { useState } from "react";
-// import "./App.css";
-// import TwitterFollowCard from "./TwitterFollowCard";
-
-// const App = () => {
-//   return (
-//     <div className="App">
-//       <TwitterFollowCard userName="midudev" initialIsFollowing>
-//         Miguel D
-//       </TwitterFollowCard>
-//       <TwitterFollowCard userName="pheralb" initialIsFollowing={false}>
-//         Pablo Hernandez
-//       </TwitterFollowCard>
-//     </div>
-//   );
-// };
-
-// export default App;
